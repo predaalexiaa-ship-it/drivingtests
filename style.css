@@ -1,81 +1,64 @@
-/* --- Global Layout --- */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+/* General Content Page Styling */
+.content-page {
+    padding: 50px 20px;
 }
 
-nav .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-}
-
-.cta-button {
-    background-color: #f7b731; /* Bright accent color */
-    color: #333;
-    padding: 8px 15px;
-    border-radius: 4px;
-    font-weight: bold;
-    text-decoration: none !important;
-}
-
-/* --- Home Page (index.html) Styling --- */
-.home-hero {
+.content-page h2 {
     text-align: center;
-    padding: 80px 20px;
-    background: #f9f9f9;
+    margin-bottom: 40px;
+    color: #1a73e8;
 }
 
-.hero-section h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-.large {
-    font-size: 1.2em;
-    padding: 15px 30px;
-    margin-top: 20px;
-    display: inline-block;
-}
-
-/* --- Pricing Page (pricing.html) Styling --- */
-.plan-container {
+/* Reviews Grid Styling */
+.review-grid {
     display: flex;
+    gap: 20px;
     justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
 }
 
-.plan {
-    border: 1px solid #ccc;
+.review-card {
+    background-color: #f0f8ff;
+    border-left: 5px solid #1a73e8;
     padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    flex: 1;
+    border-radius: 4px;
     max-width: 300px;
 }
 
-.plan .price {
-    font-size: 2em;
+.review-card .quote {
+    font-style: italic;
+}
+
+/* Login Form Styling */
+.login-form-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
     font-weight: bold;
-    color: #1a73e8;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+.login-form .cta-button {
+    width: 100%;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
 }
